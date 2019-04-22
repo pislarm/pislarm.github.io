@@ -7,12 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   
-  <script>
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
   <h1>test deploy of a static site...</h1>
+  <div id="app">
+  {{ message }}
+</div>
 </body>
+  <script>
+    var app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue!'
+      }
+    })
+  </script>
 
 
 </html>
